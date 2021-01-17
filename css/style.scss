@@ -1,0 +1,331 @@
+header{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    ul{
+        width: 100%;
+        list-style: none;
+        display: flex;
+        padding: 0;
+        justify-content: space-evenly;
+    }
+    a{
+        text-decoration: none;
+        color: white;
+    }
+    background-color: #1c1d1a;
+    font-size: 1.2em;
+}
+body{
+    margin: 0;
+}
+.wrapper1{
+    display: flex;
+    flex-direction: column;
+    height: 40em;
+    .picture{
+        width: 100%;
+        height: 70%;
+        .lucas{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .title{
+        background: linear-gradient(#1c1d1a 0%, #4f524b 80%, #1c1d1a 100% );
+        height: 30%;
+        text-align: center;
+        .name{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: white;
+            font-size: 2.5em;
+            margin: 0;
+            margin-top: .8em;
+        }
+        .ocupacion{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: white;
+            font-size: 1.5em;
+        }
+    }
+}
+.wrapper2{
+    display: flex;
+    flex-direction: column;
+    background: #1c1d1a;
+    .title2{
+        text-align: center;
+        .history{
+            color: orange;
+            font-size: 2em;
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    }
+    .table{
+        .year{
+            text-align: center;
+            font-size: 2em;
+            p{
+                color: white;
+            }
+        }
+        .info{
+            padding: 0 10%;
+            text-align: center;
+            font-size: 1.5em;
+            p{
+                color: white;
+                a{
+                    text-decoration: none;
+                    color: orange;
+                }
+            }
+        }
+    }
+}
+.wrapper3{
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(#1c1d1a 10%, #4f524b 80%, #1c1d1a 100% );
+    .title2{
+        text-align: center;
+        .history{
+            color: orange;
+            font-size: 2em;
+            margin: 0;
+            margin-top: 1em;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    }
+    .proyecto1{
+        margin-top: 3em;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        a{
+            text-decoration: none;
+            .subtitle{
+                color: orange;
+                font-size: 1.5em;
+                margin: 0;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            .casa{
+                margin-top: 2em;
+                width: 80%;
+                border-radius: 1em;
+            }
+        }
+    }
+    .proyecto2{
+        margin-top: 3em;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        a{
+            text-decoration: none;
+            .subtitle{
+                color: orange;
+                font-size: 1.5em;
+                margin: 0;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            .escolaridad{
+                margin-top: 2em;
+                width: 80%;
+                border-radius: 1em;
+            }
+        }
+    }
+    .proyecto3{
+        margin-top: 3em;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        a{
+            text-decoration: none;
+            .subtitle{
+                color: orange;
+                font-size: 1.5em;
+                margin: 0;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            .acreditacion{
+                margin-top: 2em;
+                width: 80%;
+                border-radius: 1em;
+            }
+        }
+    }
+}
+
+footer{
+    background: #1c1d1a;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    .title{
+        margin: 0;
+        margin-top: 3em;
+        font-size: 2em;
+        color: orange;
+    }
+    .left{
+        display: flex;
+        flex-direction: column;
+        .first{
+            color: white;
+            margin-top: 1em;
+            font-size: 1.5em;
+            a{
+                color: white;
+            }
+        }
+        .middle{
+            color: white;
+            margin-top: 1em;
+            padding: 0 10%;
+            font-size: 1.5em;
+            a{
+                color: white;
+            }
+        }
+        .last{
+            color: white;
+            margin-top: 1em;
+            padding: 0 10%;
+            margin-bottom: 2em;
+            font-size: 1.5em;
+            a{
+                color: white;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 600px){
+    .wrapper1{
+        .picture{
+            height: 100%;
+        }
+        .title{
+            height: 100%;
+        }
+    }
+    .wrapper2{
+        margin-top: 10em;
+    }
+}
+
+@media only screen and (min-width: 900px){
+    .wrapper1{
+        display: flex;
+        flex-direction: row-reverse;
+        .picture{
+            width: 50%;
+            height: 100%;
+        }
+        .title{
+            width: 50%;
+            height: 100%;
+            .name{
+                margin-top: 50%;
+                font-size: 3em;
+            }
+        }
+    }
+    .wrapper2{
+        margin-top: 0;
+        .title2{
+            margin-top: 5em;
+        }
+    }
+}
+
+@media only screen and (min-width: 1350px){
+    .wrapper1{
+        display: flex;
+        flex-direction: row-reverse;
+        height: 45em;
+        .picture{
+            width: 50%;
+            height: 100%;
+        }
+        .title{
+            width: 50%;
+            height: 100%;
+            .name{
+                margin-top: 45%;
+                font-size: 3em;
+            }
+            .ocupacion{
+                font-size: 2em;
+            }
+        }
+    }
+    .wrapper2{
+        margin-top: 0;
+        .title2{
+            margin-top: 5em;
+            font-size: 1.5em;
+        }
+    }
+    .wrapper3{
+        .title2{
+            font-size: 1.5em;
+        }
+        .proyecto1, .proyecto2, .proyecto3{
+            a{
+                .subtitle{
+                    font-size: 2em;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1800px){
+    .wrapper1{
+        display: flex;
+        flex-direction: row-reverse;
+        height: 60em;
+        .picture{
+            width: 50%;
+            height: 100%;
+        }
+        .title{
+            width: 50%;
+            height: 100%;
+            .name{
+                margin-top: 40%;
+                font-size: 6em;
+            }
+            .ocupacion{
+                font-size: 4em;
+            }
+        }
+    }
+    .wrapper2{
+        margin-top: 0;
+        .title2{
+            margin-top: 5em;
+            font-size: 1.5em;
+        }
+    }
+    .wrapper3{
+        .title2{
+            font-size: 1.5em;
+        }
+        .proyecto1, .proyecto2, .proyecto3{
+            a{
+                .subtitle{
+                    font-size: 2em;
+                }
+            }
+        }
+    }
+}
